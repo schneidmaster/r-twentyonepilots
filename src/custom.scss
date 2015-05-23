@@ -121,20 +121,35 @@ a[href="/r/twentyonepilots?subredditlogo"]:after {
     display: none;
 }
 
-// Fix search and submit boxes
-.side {
-    margin-top: 375px;
-}
-
+// Fix search, linkinfo, and submit boxes
 #search {
     top: 275px;
     right: 16px;
 }
 
-.sidebox.submit.submit-link, .sidebar.submit.submit-link {
-    position: absolute;
-    top: 175px;
-    right: 0px;
+.res.listing-page .side, .listing-page .side, .side {
+    margin-top: 375px;
+
+    .submit.submit-link {
+        position: absolute;
+        top: 175px;
+        right: 0px;
+    }
+}
+
+.res.comments-page .side, .comments-page .side {
+    margin-top: 497px;
+
+    .linkinfo {
+        position: absolute;
+        top: 325px;
+    }
+
+    .submit.submit-link {
+        position: absolute;
+        top: 300px;
+        right: 0px;
+    }
 }
 
 /********************************* SUBMISSION PAGE **************************/

@@ -2763,7 +2763,7 @@
 						}
 
 					.RESDropdownList {
-						border-color: #4258ca;
+						border-color: black;
 						box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
 						margin-top: 4px;
 						margin-right: 8px;
@@ -2772,7 +2772,7 @@
 						.RESDropdownList li {
 							background-color: $orange;
 							color: #fff;
-							border-color: #4258ca;
+							border-color: black;
 							transition: all 0.15s ease;
 						}
 
@@ -2782,17 +2782,17 @@
 
 								.RESDropdownList li:hover, .RESDropdownList li a:hover {
 									color: #fff;
-									background-color: #667df0;
+									background-color: $lightorange;
 								}
 
 							#RESSearchMenuItem {
-								border: 1px solid #4258ca;
+								border: 1px solid black;
 								border-radius: 1px;
-								background-color: #667df0;
+								background-color: $lightorange;
 							}
 
 								#RESSearchMenuItem:hover {
-									background-color: #667df0;
+									background-color: $lightorange;
 								}
 
 							.toggleButton {
@@ -2807,7 +2807,7 @@
 									.moduleToggle.enabled .toggleOff, .toggleButton.enabled .toggleOff {
 										background-color: transparent;
 										color: rgba(255,255,255,0.6);
-										border: 1px solid #4258ca;
+										border: 1px solid black;
 										transition: all 0.15s ease;
 										border-radius: 2px;
 									}
