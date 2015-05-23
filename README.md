@@ -10,3 +10,9 @@ This repository also includes specific subreddit CSS for things like flair.
 1. `npm install`
 2. `grunt`
 3. Copy the contents of `production.min.css` into the subreddit CSS page.
+
+## Test subreddit
+[/r/twentyonepilotscss](https://reddit.com/r/twentyonepilotscss) - it's a private sub, message me for access.
+
+## Building test CSS
+Contains only one flair (.cover-rab). Run `grunt test` or `grunt watch` to recompile SCSS on save.

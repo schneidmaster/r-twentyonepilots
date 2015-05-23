@@ -1,0 +1,35 @@
+/********************************* HEADER **************************/
+
+// Hide the snoo
+#header-img, #header-img.default-header {
+    display: none;
+}
+
+/********************************* SIDEBAR **************************/
+
+// Change words to "local dreamers"
+    div.titlebox span.word { display: none; }
+    div.titlebox span.number:after { content: " local dreamers";
+}
+
+// Sidebar name
+h1.redditname {
+    font-size: 0px;
+}
+
+h1.redditname:after {
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    content: "twenty | øne | piløts";
+}
+
+// Sidebar AMA image
+a[href="https://www.reddit.com/r/Music/comments/33pdxr/we_are_tyler_joseph_and_josh_dun_of_twenty_one/"]:after {
+    content: url(%%snoos-small%%);
+}
+
+// Remove sidebar linkback
+.side:after {
+    display: none;
+}
