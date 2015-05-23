@@ -16,3 +16,8 @@ This repository also includes specific subreddit CSS for things like flair.
 
 ## Building test CSS
 Contains only one flair (.cover-rab). Run `grunt test` or `grunt watch` to recompile SCSS on save.
+
+## Creds
+
+- Base theme: [Axel--](https://github.com/Axel--/Naut-for-reddit)
+- Header img: [NickFrey](https://github.com/NickFrey)

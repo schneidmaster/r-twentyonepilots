@@ -1,8 +1,87 @@
 /********************************* HEADER **************************/
 
+// Set header height for image
+#header-bottom-left {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 240px;
+    background-color: #101D23;
+}
+
+// Position the tabs over the header image
+#header-bottom-left .tabmenu {
+    display: block;
+    position: absolute;
+    left: 7px;
+    bottom: 0px;
+}
+
+// Make the header link to the sub
+#header .hover.pagename.redditname {
+    margin: 0px;
+    padding: 0px;
+    line-height: 0px;
+    font-size: 0px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-top: -16px;
+
+    a {
+        background-image: url(%%headerimg%%);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        font-size: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-size: auto 100%;
+        margin: 0px;
+
+        &:before {
+            content: '';
+        }
+    }
+}
+
 // Hide the snoo
 #header-img, #header-img.default-header {
     display: none;
+}
+
+// Hide the naut header
+body:before {
+    display: none;
+}
+
+// Push body and sidebar below header
+body>.content, .side {
+    margin-top: 275px;
+}
+
+// Make stuff in the RES bar readable
+#sr-header-area .dropdown.srdrop .selected, #sr-header-area .separator, #sr-header-area .sr-bar a, #sr-more-link {
+    color: black;
+}
+#RESShortcutsAdd, #RESShortcutsLeft, #RESShortcutsRight, #RESShortcutsSort, #RESShortcutsTrash, .res #RESShortcutsEditContainer {
+    color: black !important;
+}
+
+// Change username color
+#header-bottom-right .user a, {
+    color: black;
+}
+
+// Fix beta icon
+#header-bottom-right #userbarToggle + * {
+    margin-top: 3px;
+    margin-left: 5px !important;
+}
+
+// Change userbar karma color
+#header-bottom-right .user .userkarma, #header-bottom-right .user .userkarma a {
+    color: #F04937;
 }
 
 /********************************* SIDEBAR **************************/
@@ -10,6 +89,11 @@
 // Change words to "local dreamers"
     div.titlebox span.word { display: none; }
     div.titlebox span.number:after { content: " local dreamers";
+}
+
+// Hide approved submitter text
+form.toggle.leavecontributor-button {
+    display: none;
 }
 
 // Sidebar name
