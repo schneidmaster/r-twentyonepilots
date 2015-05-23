@@ -1,3 +1,5 @@
+@import 'colors';
+
 /********************************* HEADER **************************/
 
 // Set header height for image
@@ -81,7 +83,7 @@ body>.content, .submit-page .content {
 
 // Change userbar karma color
 #header-bottom-right .user .userkarma, #header-bottom-right .user .userkarma a {
-    color: #F04937;
+    color: $orange;
 }
 
 /********************************* SIDEBAR **************************/
@@ -151,4 +153,14 @@ a[href="/r/twentyonepilots?subredditlogo"]:after {
 
 .submit_text h2 {
     font-weight: bold;
+}
+
+/********************************* MISC **************************/
+
+.link .score.likes {
+    color: $orange;
+}
+
+.link .score.dislikes {
+    color: black;
 }
