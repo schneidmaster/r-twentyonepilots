@@ -67,6 +67,10 @@ body>.content, .submit-page .content {
 #sr-header-area .dropdown.srdrop .selected, #sr-header-area .separator, #sr-header-area .sr-bar a, #sr-more-link {
     color: black;
 }
+#sr-header-area:hover .sr-bar a, #sr-header-area:hover #sr-more-link, #sr-header-area:hover .seperator, #sr-header-area:hover .dropdown.srdrop .selected {
+    color: black;
+}
+
 #RESShortcutsAdd, #RESShortcutsLeft, #RESShortcutsRight, #RESShortcutsSort, #RESShortcutsTrash, .res #RESShortcutsEditContainer {
     color: black !important;
 }
