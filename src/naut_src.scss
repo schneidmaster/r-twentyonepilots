@@ -40,7 +40,7 @@
 
 			-------------------------------------------------------------------------- */
 
-
+		@import 'colors';
 
 		*, *:before, *:after { -webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
 
@@ -88,7 +88,7 @@
 			.btn, button {
 				margin: 4px 16px 4px 0px;
 				padding: 2px 18px;
-				background-color: #516AE8;
+				background-color: $orange;
 				border: none;
 				border-radius: 2px;
 				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.24);
@@ -103,12 +103,12 @@
 
 				.btn:hover, button:hover {
 					box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.34);
-					background-color: #5A72EE;
+					background-color: $lightorange;
 				}
 
 					.btn:active, button:active {
 						box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
-						background-color: #4059DB;
+						background-color: $orange;
 					}
 
 					.btn:focus, button:focus {outline: none;}
@@ -560,7 +560,7 @@
 					position: absolute;
 					top: 148px;
 					box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
-					background-color: #516ae8;
+					background-color: $orange;
 					background-image: url(%%spritesheet%%) !important;
 					background-position: 268px -214px!important;
 					background-repeat: no-repeat !important;
@@ -577,12 +577,12 @@
 				}	
 
 					.morelink:hover {
-						background-color: #5a72ee;
+						background-color: $lightorange;
 						box-shadow: 0px 5px 8px rgba(0,0,0,0.24);
 					}
 
 						.morelink:active {
-							background-color: #4059DB;
+							background-color: $orange;
 							box-shadow: 0px 8px 12px rgba(0,0,0,0.60);
 						}
 
@@ -603,7 +603,7 @@
 						right: 0px;
 						margin-top: 0px;
 						display: block;
-						background-color: #516AE8;
+						background-color: $orange;
 						color: #fff;
 						letter-spacing: 0px;
 						z-index: 100;
@@ -730,11 +730,11 @@
 						}
 
 					.titlebox .fancy-toggle-button .add {
-						background-color: #516AE8;
+						background-color: $orange;
 						background-position: -208px -144px;
 					}
 
-						.titlebox .fancy-toggle-button .add:hover {background-color: #5A72EE;}
+						.titlebox .fancy-toggle-button .add:hover {background-color: $lightorange;}
 
 							.titlebox .fancy-toggle-button .add:active {
 								background-color: #fff;
@@ -749,7 +749,7 @@
 						.titlebox .fancy-toggle-button .remove:hover {background-color: rgba(0,0,0,0.05);}
 
 							.titlebox .fancy-toggle-button .remove:active {
-								background-color: #5A72EE;
+								background-color: $lightorange;
 								background-position: -208px -144px;
 							}
 
@@ -763,7 +763,7 @@
 						right: -26px;
 						margin-top: 16px;
 						padding: 12px;
-						background-color: rgba(79, 77, 192, 0);
+						background-color: $orange;
 						border: none;
 						border-radius: 2px;
 						color: rgba(255, 255, 255, 0);
@@ -782,7 +782,7 @@
 							visibility: visible;
 							margin-top: 40px;
 							color: #fff;
-							background-color: #516AE8;
+							background-color: $orange;
 							box-shadow: 0px 1px 5px rgba(0,0,0,0.24);
 						}
 
@@ -826,7 +826,7 @@
 						padding: 12px 16px;
 						width: 100%;
 						border-radius: 2px;
-						background-color: #516AE8;
+						background-color: $orange;
 						font-family: verdana,arial,sans-serif;
 						transition: all 0.25s ease;
 						color: #fff;
@@ -837,12 +837,12 @@
 					}
 
 						.side .titlebox .md h3 a:hover {
-							background-color: #5A72EE;
+							background-color: $lightorange;
 							box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.54);
 						}
 
 							.side .titlebox .md h3 a:active {
-								background-color: #4059DB;
+								background-color: $orange;
 								box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.54);
 							}
 
@@ -1036,7 +1036,7 @@
 										margin-top: -6px;
 										margin-left: 32px;
 										padding: 12px;
-										background-color: rgba(79, 77, 192, 0.0);
+										background-color: $orange;
 										border: none;
 										border-radius: 2px;
 										color: rgba(255, 255, 255, 0);
@@ -1051,7 +1051,7 @@
 
 										.arrow.down:hover:after {
 											visibility: visible;
-											background-color: rgba(79, 77, 192, 0.9);
+											background-color: $orange;
 											color: #FFF;
 											margin-left: 48px;
 										}
@@ -1098,7 +1098,7 @@
 								.linkflair-inspiration .thumbnail.self {background: url(%%spritesheet%%) -143px -140px;}
 
 							.linkflair-waywo .linkflairlabel {
-								background-color: #516ae8;
+								background-color: $orange;
 								color: #fff;
 							}
 
@@ -1727,7 +1727,7 @@
 							font-size: 12px;
 							pointer-events: none;
 							padding: 10px 16px 10px 16px;
-							background-color: #5A72EE;
+							background-color: $lightorange;
 							overflow: visible;
 							color: #FFF;
 						}
@@ -1792,7 +1792,7 @@
 						padding: 8px 16px;
 						line-height: 26px;
 						border: none;
-						background-color: #516AE8;
+						background-color: $orange;
 						color: #fff;
 						box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
 						border-radius: 2px;
@@ -2205,12 +2205,12 @@
 
 							.submit-page #newlink.submit.content .tabmenu.formtab .selected a {
 								font-size: 16px;
-								background-color: #516AE8;
+								background-color: $orange;
 								color: #fff;
 							}
 
 								.submit-page #newlink.submit.content .tabmenu.formtab a:hover {background-color: #e7e9f6;}
-								.submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover {background-color: #6379ea;}
+								.submit-page #newlink.submit.content .tabmenu.formtab .selected a:hover {background-color: $lightorange;}
 
 					.submit-page .formtabs-content {border-top: 0px;padding-top: 0;}
 
@@ -2233,7 +2233,7 @@
 						margin: 0;
 						padding: 16px;
 						color: #fff;
-						background-color: #516AE8;
+						background-color: $orange;
 						border-radius: 0 0 2px 2px;
 						border: none;
 						margin-top: -12px;
@@ -2261,7 +2261,7 @@
 						line-height: 41px;
 						height: 42px;
 						margin-top: 24px;
-						background-color: #516AE8;
+						background-color: $orange;
 						border: none;
 						color: #fff;
 						box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.24);
@@ -2756,7 +2756,7 @@
 					}
 
 						#RESMainGearOverlay {
-							background-color: #516ae8;
+							background-color: $orange;
 							top: 0px !important;
 							height: 26px !important;
 							border-radius: 0px !important;
@@ -2770,7 +2770,7 @@
 					}
 
 						.RESDropdownList li {
-							background-color: #516ae8;
+							background-color: $orange;
 							color: #fff;
 							border-color: #4258ca;
 							transition: all 0.15s ease;
@@ -2815,7 +2815,7 @@
 									.moduleToggle.enabled .toggleOn, .toggleButton.enabled .toggleOn,
 									.moduleToggle:not(.enabled) .toggleOff, .toggleButton:not(.enabled) .toggleOff {
 										background-color: #fff;
-										color: #516AE8;
+										color: $orange;
 										font-weight: bolder;
 										border: 1px solid #fff;
 										transition: all 0.15s ease;

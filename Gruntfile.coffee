@@ -77,7 +77,7 @@ module.exports = (grunt) ->
   # tasks
   grunt.registerTask 'default', [
     'clean'
-    'sass'
+    'sass:dist'
     'string-replace'
     'cssmin'
   ]

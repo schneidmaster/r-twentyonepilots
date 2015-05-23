@@ -1,20 +1,20 @@
 /********************************* HEADER **************************/
 
 // Set header height for image
-#header-bottom-left {
+.submit-page #header-bottom-left, #header-bottom-left {
     position: relative;
     top: 0px;
     left: 0px;
     height: 240px;
     background-color: #101D23;
-}
 
-// Position the tabs over the header image
-#header-bottom-left .tabmenu {
-    display: block;
-    position: absolute;
-    left: 7px;
-    bottom: 0px;
+    // Position the tabs over the header image
+    .tabmenu {
+        display: block;
+        position: absolute;
+        left: 7px;
+        bottom: 0px;
+    }
 }
 
 // Make the header link to the sub
@@ -55,8 +55,8 @@ body:before {
     display: none;
 }
 
-// Push body and sidebar below header
-body>.content, .side {
+// Push body below header
+body>.content, .submit-page .content {
     margin-top: 275px;
 }
 
@@ -108,12 +108,47 @@ h1.redditname:after {
     content: "twenty | øne | piløts";
 }
 
-// Sidebar AMA image
-a[href="https://www.reddit.com/r/Music/comments/33pdxr/we_are_tyler_joseph_and_josh_dun_of_twenty_one/"]:after {
-    content: url(%%snoos-small%%);
+// Sidebar image
+a[href="/r/twentyonepilots?subredditlogo"]:after {
+    content: url(%%subreddit-logo%%);
 }
 
 // Remove sidebar linkback
 .side:after {
     display: none;
+}
+
+// Fix search and submit boxes
+.side {
+    margin-top: 375px;
+}
+
+#search {
+    top: 275px;
+    right: 16px;
+}
+
+.sidebox.submit.submit-link, .sidebar.submit.submit-link {
+    position: absolute;
+    top: 175px;
+    right: 0px;
+}
+
+/********************************* SUBMISSION PAGE **************************/
+
+#reddit-field {
+    display: none;
+}
+
+.submit_text.roundfield {
+    max-height: 370px;
+    margin-bottom: 0px;
+}
+
+.submit_text h1 {
+    display: none;
+}
+
+.submit_text h2 {
+    font-weight: bold;
 }
