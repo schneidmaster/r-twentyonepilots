@@ -2,6 +2,14 @@ path = require('path')
 escapeChar = process.platform.match(/^win/) ? '^' : '\\'
 cwd = process.cwd().replace(/( |\(|\))/g, escapeChar + '$1')
 
+banner = """
+/*
+ * /r/twentyonepilots CSS theme
+ * Based on /r/Naut, modified by /u/schneidmaster
+ * See https://github.com/schneidmaster/r-twentyonepilots for source.
+*/
+"""
+
 module.exports = (grunt) ->
 
   grunt.initConfig
@@ -14,15 +22,6 @@ module.exports = (grunt) ->
       '.tmp/**/*'
       'build/'
     ]
-
-    # grunt concat
-    concat:
-      css:
-        src:  [
-          '.tmp/naut_src.css'
-          '.tmp/flair.css'
-        ]
-        dest: '.tmp/concat/production.css'
  
     # grunt sass
     sass:
@@ -33,13 +32,14 @@ module.exports = (grunt) ->
 
     # grunt cssmin
     cssmin:
-      dist:
-        src: ['.tmp/concat/production.css']
-        dest: 'build/production.min.css'
+      target:
+        options:
+          banner: banner
+        files:
+          'build/production.min.css': ['.tmp/naut_src.css', '.tmp/flair.css']
  
   # load plugins
   grunt.loadNpmTasks 'grunt-contrib-clean'
-  grunt.loadNpmTasks 'grunt-contrib-concat'
   grunt.loadNpmTasks 'grunt-contrib-cssmin'
   grunt.loadNpmTasks 'grunt-contrib-sass'
 
@@ -47,6 +47,5 @@ module.exports = (grunt) ->
   grunt.registerTask 'default', [
     'clean'
     'sass'
-    'concat'
     'cssmin'
   ]

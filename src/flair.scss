@@ -173,10 +173,10 @@ a.id-t2_n1sw2 {
     padding: 3px;
     border-radius: 3px;
     font-weight: bold;
-}
 
-a.id-t2_n1sw2:after {
-    content: " - Band Account";
+    &:after {
+        content: " - Band Account";
+    }
 }
 
 /* Verified reviewer */
@@ -186,8 +186,8 @@ a.id-t2_8br3x {
     padding: 1px;
     border-radius: 3px;
     font-weight: bold;
-}
 
-a.id-t2_8br3x:after {
-    content: " - Verified Reviewer";
+    &:after {
+        content: " - Verified Reviewer";
+    }
 }
