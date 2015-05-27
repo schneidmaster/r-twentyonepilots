@@ -31,7 +31,8 @@
     margin-top: -16px;
 
     a {
-        background-image: url(%%headerimg%%), -webkit-linear-gradient(top, #0c191b, #13242b);
+        background: -webkit-linear-gradient(top, #0c191b, #13242b);
+        background-image: url(%%headerimg%%);
         background-repeat: no-repeat;
         background-position: center 0;
         font-size: 0px;
@@ -116,7 +117,7 @@ h1.redditname:after {
 }
 
 // Sidebar image
-a[href="/r/twentyonepilots?subredditlogo"]:after {
+a[href="#?subredditlogo"]:after {
     content: url(%%subreddit-logo%%);
 }
 
