@@ -182,8 +182,8 @@
 }
 
 // Band account 
-a.id-t2_n1sw2 {
-    background-color: #F04937;
+a.id-t2_n1sw2, .res .thing .tagline .author.moderator.id-t2_n1sw2 {
+    background-color: #F04937 !important;
     color: #fff !important;
     padding: 3px;
     border-radius: 3px;
@@ -194,22 +194,9 @@ a.id-t2_n1sw2 {
     }
 }
 
-// Verified reviewer
-a.id-t2_8br3x {
-    background-color: #551A8B;
-    color: #fff !important;
-    padding: 1px;
-    border-radius: 3px;
-    font-weight: bold;
-
-    &:after {
-        content: " - Verified Reviewer";
-    }
-}
-
 // Bot
-a.id-t2_nt57c {
-    background-color: #404040;
+a.id-t2_nt57c, .res .thing .tagline .author.moderator.id-t2_nt57c {
+    background-color: #404040 !important;
     color: #fff !important;
     padding: 1px;
     border-radius: 3px;
