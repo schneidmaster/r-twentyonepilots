@@ -1,6 +1,5 @@
 /********************************* LINK FLAIR **************************/
 
-/* Link flair styles */
 .linkflairlabel {
     height: auto;
     padding-left: 10px;
@@ -43,7 +42,6 @@
 
 /********************************* USER FLAIR **************************/
 
-/* User flair styles */
 .flairselector .customizer {
     display: none;
 }
@@ -164,19 +162,26 @@
         background-size: 53px 30px;
     }
 
+    &.flair-no-phun-intended {
+        background-image: url(%%no-phun-intended%%);
+        background-size: 30px 30px;
+    }
+
+    // Special flairs (not accessable to users via template)
+
     &.flair-band-account {
         width: 62px;
         background-image: url(%%tyler-and-josh%%);
         background-size: 62px 30px;
     }
 
-    &.flair-no-phun-intended {
-        background-image: url(%%no-phun-intended%%);
+    &.flair-bot-flair {
+        background-image: url(%%bot-flair%%);
         background-size: 30px 30px;
     }
 }
 
-/* Band account */
+// Band account 
 a.id-t2_n1sw2 {
     background-color: #F04937;
     color: #fff !important;
@@ -189,7 +194,7 @@ a.id-t2_n1sw2 {
     }
 }
 
-/* Verified reviewer */
+// Verified reviewer
 a.id-t2_8br3x {
     background-color: #551A8B;
     color: #fff !important;
@@ -199,5 +204,18 @@ a.id-t2_8br3x {
 
     &:after {
         content: " - Verified Reviewer";
+    }
+}
+
+// Bot
+a.id-t2_nt57c {
+    background-color: #404040;
+    color: #fff !important;
+    padding: 1px;
+    border-radius: 3px;
+    font-weight: bold;
+
+    &:after {
+        content: " - Robot Overlord";
     }
 }
