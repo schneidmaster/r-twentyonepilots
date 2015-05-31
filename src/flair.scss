@@ -11,32 +11,32 @@
     color: white;
 }
 
-.linkflair-flair-discussion .linkflairlabel, .flairsample-left .linkflair-flair-discussion .linkflairlabel, .linkflair-flair-discussion.linkflairlabel {
+.linkflairlabel[title='Discussion'] {
     background-color: #70C3D9;
     border-color: #70C3D9;
 }
 
-.linkflair-flair-news .linkflairlabel, .flairsample-left .linkflair-flair-news .linkflairlabel, .linkflair-flair-news.linkflairlabel {
+.linkflairlabel[title='News'] {
     background-color: #F04937;
     border-color: #F04937;
 }
 
-.linkflair-flair-music .linkflairlabel, .flairsample-left .linkflair-flair-music .linkflairlabel, .linkflair-flair-music.linkflairlabel {
+.linkflairlabel[title='Music'] {
     background-color: #FFCF5D;
     border-color: #FFCF5D;
 }
 
-.linkflair-flair-question .linkflairlabel, .flairsample-left .linkflair-flair-question .linkflairlabel, .linkflair-flair-question.linkflairlabel {
+.linkflairlabel[title='Question'] {
     background-color: #5A70CA;
     border-color: #5A70CA;
 }
 
-.linkflair-flair-creation .linkflairlabel, .flairsample-left .linkflair-flair-creation .linkflairlabel, .linkflair-flair-creation.linkflairlabel {
+.linkflairlabel[title='Creation'] {
     background-color: #2EBF5A;
     border-color: #2EBF5A;
 }
 
-.linkflair-flair-video .linkflairlabel, .flairsample-left .linkflair-flair-video .linkflairlabel, .linkflair-flair-video.linkflairlabel {
+.linkflairlabel[title='Video'] {
     background-color: #7D26CD;
     border-color: #7D26CD;
 }
