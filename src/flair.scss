@@ -210,3 +210,18 @@ a.id-t2_nt57c, .res .thing .tagline .author.moderator.id-t2_nt57c {
         content: " - Robot Overlord";
     }
 }
+
+// tuckerstosic
+a.id-t2_puveq, .res .thing .tagline .author.moderator.id-t2_puveq {
+    background-color: #66CD00 !important;
+    color: #fff !important;
+    padding: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+    font-weight: bold;
+
+    &:after {
+        content: " - Clique Artist";
+    }
+}
