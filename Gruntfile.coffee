@@ -10,6 +10,14 @@ banner = """
 */
 """
 
+tickets_banner = """
+/*
+ * /r/toptickets CSS theme
+ * Based on /r/Naut, modified by /u/schneidmaster
+ * See https://github.com/schneidmaster/r-twentyonepilots for source.
+*/
+"""
+
 module.exports = (grunt) ->
 
   grunt.initConfig
@@ -29,12 +37,20 @@ module.exports = (grunt) ->
         files:
           '.tmp/naut_src.css': 'src/naut_src.scss'
           '.tmp/custom.css'  : 'src/custom.scss'
+          '.tmp/custom-main.css'  : 'src/custom-main.scss'
           '.tmp/flair.css'   : 'src/flair.scss'
       test:
         files:
           '.tmp/naut_src.css': 'src/naut_src.scss'
           '.tmp/custom.css'  : 'src/custom.scss'
+          '.tmp/custom-main.css'  : 'src/custom-main.scss'
           '.tmp/flair.css'   : 'src/test-flair.scss'
+      tickets:
+        files:
+          '.tmp/naut_src.css': 'src/naut_src.scss'
+          '.tmp/custom.css'  : 'src/custom.scss'
+          '.tmp/custom-tickets.css'  : 'src/custom-tickets.scss'
+          '.tmp/flair.css'   : 'src/tickets-flair.scss'
 
     # grunt string-replace
     'string-replace':
@@ -51,13 +67,24 @@ module.exports = (grunt) ->
 
     # grunt cssmin
     cssmin:
-      target:
+      dist:
         options:
           banner: banner
         files:
           'build/production.min.css': [
             '.tmp/naut_src.css'
             '.tmp/custom.css'
+            '.tmp/custom-main.css'
+            '.tmp/flair.css'
+          ]
+      tickets:
+        options:
+          banner: tickets_banner
+        files:
+          'build/production.min.css': [
+            '.tmp/naut_src.css'
+            '.tmp/custom.css'
+            '.tmp/custom-tickets.css'
             '.tmp/flair.css'
           ]
 
@@ -79,12 +106,19 @@ module.exports = (grunt) ->
     'clean'
     'sass:dist'
     'string-replace'
-    'cssmin'
+    'cssmin:dist'
+  ]
+
+  grunt.registerTask 'tickets', [
+    'clean'
+    'sass:tickets'
+    'string-replace'
+    'cssmin:tickets'
   ]
 
   grunt.registerTask 'test', [
     'clean'
     'sass:test'
     'string-replace'
-    'cssmin'
+    'cssmin:dist'
   ]

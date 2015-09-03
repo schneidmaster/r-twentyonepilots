@@ -11,6 +11,8 @@ This repository also includes specific subreddit CSS for things like flair.
 2. `grunt`
 3. Copy the contents of `production.min.css` into the subreddit CSS page.
 
+The codebase also contains the code for /r/toptickets - to build that, run `grunt tickets` instead.
+
 ## Test subreddit
 [/r/twentyonepilotscss](https://reddit.com/r/twentyonepilotscss) - it's a private sub, message me for access.
 

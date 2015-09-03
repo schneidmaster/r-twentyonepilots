@@ -1,0 +1,29 @@
+form#newlink {
+  ul.tabmenu {
+    display: none;
+  }
+
+  div.formtabs-content {
+    #link-desc, #text-desc, #url-field {
+      display: none !important;
+    }
+
+    #text-field {
+      display: block !important;
+    }
+  }
+}
+
+.res.listing-page .side .submit.submit-text, .listing-page .side .submit.submit-text, .side .submit.submit-text {
+  position: absolute;
+  top: 175px;
+  right: 0px; 
+}
+
+.comments-page .side .linkinfo, .res.comments-page .side .linkinfo {
+  top: 375px;
+}
+
+.sidebox.submit.submit-link {
+  display: none;
+}

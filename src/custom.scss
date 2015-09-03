@@ -104,23 +104,6 @@ form.toggle.leavecontributor-button {
     display: none;
 }
 
-// Sidebar name
-h1.redditname {
-    font-size: 0px;
-}
-
-h1.redditname:after {
-    font-family: helvetica;
-    font-weight: normal;
-    font-size: 24px;
-    content: "twenty | øne | piløts";
-}
-
-// Sidebar image
-a[href="#?subredditlogo"]:after {
-    content: url(%%subreddit-logo%%);
-}
-
 // Remove sidebar linkback
 .side:after {
     display: none;

@@ -1,0 +1,26 @@
+// Sidebar name
+h1.redditname {
+    font-size: 0px;
+}
+
+h1.redditname:after {
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    content: "twenty | øne | piløts";
+}
+
+// Sidebar image
+a[href="#?subredditlogo"]:after {
+    content: url(%%subreddit-logo%%);
+}
+
+.res.listing-page .side .submit.submit-link, .listing-page .side .submit.submit-link, .side .submit.submit-link {
+  position: absolute;
+  top: 175px;
+  right: 0px;
+}
+
+.sidebox.submit.submit-text {
+  display: none;
+}
