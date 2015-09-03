@@ -1,3 +1,16 @@
+// Sidebar name
+h1.redditname {
+    font-size: 0px;
+}
+
+h1.redditname:after {
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: 24px;
+    content: "tøp tickets";
+}
+
+// Hide link part of form
 form#newlink {
   ul.tabmenu {
     display: none;
@@ -14,6 +27,7 @@ form#newlink {
   }
 }
 
+// Show text link not submit link
 .res.listing-page .side .submit.submit-text, .listing-page .side .submit.submit-text, .side .submit.submit-text {
   position: absolute;
   top: 175px;
