@@ -58,7 +58,10 @@ module.exports = (grunt) ->
         files:
           '.tmp/naut_src.css': '.tmp/naut_src.css'
           '.tmp/custom.css'  : '.tmp/custom.css'
+          '.tmp/custom-main.css'  : '.tmp/custom-main.css'
+          '.tmp/custom-tickets.css'  : '.tmp/custom-tickets.css'
           '.tmp/flair.css'   : '.tmp/flair.css'
+          '.tmp/tickets-flair.css'  : '.tmp/tickets-flair.css'
         options:
           replacements: [{
             pattern: '@charset "UTF-8";'
